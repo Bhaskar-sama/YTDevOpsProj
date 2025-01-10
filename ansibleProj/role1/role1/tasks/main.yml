@@ -1,0 +1,9 @@
+---
+- name: update the server
+  apt:
+    update_cache: yes
+
+- name: install apache
+  apt:
+    name: apache2
+    state: present
