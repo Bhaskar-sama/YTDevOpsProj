@@ -1,0 +1,15 @@
+write a shell script for showing the usage of AWS resources in your project?
+
+1. Get EC2 instance running 
+2. Install Amazon CLI on the instance using following commands, this can be found on the Amazon cli documentation
+3. Configure AWS cli on Linux machine using below command
+4. To get the Key and password, go to the settings of your AWS console and click on security credentials and create access key and use that to configure in cli
+5. Create a script to run and get the details of the resources which you want, resources commands can get availed from aws cli reference.
+6. Run the script to get the details of the resources 
+
+Commands:
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
+aws s3 mb s3://'bucketname
